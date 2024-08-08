@@ -1,7 +1,7 @@
 <h1>Honeynet Implementation and SIEM Threat Analysis in Azure</h1>
 
 <h2>Description</h2>
-In this project, I designed and implemented a honeynet solution within Microsoft Azure which was operational for 24hrs to analyze and visualize cyber attack patterns to a virtual machine through brute force failed RDP (remote desktop protocol) requests around the world. The key objectives were to set up an isolated environment for capturing and analyzing malicious activity, and to leverage Azure’s native tools for detailed threat intelligence.
+In this project, I implemented a honeynet solution within Microsoft Azure which was operational for 24hrs to analyze and visualize cyber attack patterns to a virtual machine through brute force failed RDP (remote desktop protocol) requests around the world. The key objectives were to set up an isolated environment for capturing and analyzing malicious activity, and to leverage Azure’s native tools for detailed threat intelligence.
 <br />
 
 <h2>Overview</h2>
@@ -10,7 +10,7 @@ I created an Azure subscription to initiate the project environment, within Azur
 <br />
 <img src="https://i.imgur.com/NliRmdI.png" height="80%" width="80%" alt="Overview"/>
 <h2>Outcome</h2>
-40,000+ API requests on failed RDP attempts into my honeynet virtual machine from over 20 different countries in only 24 hours indicates the threat level to any person or organization remains very high in regards to cybersecurity. Analysing the data from the failed RDP attempts indicates that these were the result of a bot performing automated password-spraying brute force attacks. This is shown by the use of generic usernames such as "Admin", "Server", "User" within seconds of each attempt whilst coming from the same IP Addresses. It is essential to change default usernames, use strong passwords, configure and update firewalls to avoid being breached. 
+40,000+ API requests on failed RDP attempts into my honeynet virtual machine from over 20 different countries in only 24 hours indicates the threat level to any person or organization remains very high in regards to cybersecurity. Analysing the data from the failed RDP attempts indicates that these were mostly the result of a bots performing automated password-spraying brute force attacks. This is shown by the use of generic usernames such as "Admin", "Server", "User" within seconds of each attempt whilst coming from the same IP Addresses. It is essential to change default usernames, use strong passwords, configure and update firewalls to avoid being breached. 
 <br />
 <br />
 <img src="https://i.imgur.com/rOEwXib.png" height="80%" width="80%" alt="Map"/>
@@ -57,7 +57,7 @@ Creating query to parse data from failed RDP logs in Log Analytics Workspace:  <
 <img src="https://i.imgur.com/rTu2LN7.png" height="80%" width="80%" alt="Query"/>
 <br />
 <br />
-Creating Adding query in Sentinel to plot log data through map visualization:  <br/>
+Adding query in Sentinel to plot log data through map visualization:  <br/>
 <img src="https://i.imgur.com/hu0mfiw.png" height="80%" width="80%" alt="Map Query"/>
 <br />
 <br />
@@ -65,7 +65,7 @@ Configure Map by latitude/longitude, event count<br/>
 <img src="https://i.imgur.com/ZPnYZNM.png" height="40%" width="40%" alt="Map Config"/>
 <br />
 <br />
-Threat Intelligence Map Created With Failed RDP logs from honeynet VM<br/>
+Threat Intelligence Map Created with Failed RDP logs from honeynet VM<br/>
 <img src="https://i.imgur.com/rOEwXib.png" height="80%" width="80%" alt="Map"/>
 <br />
 <br />
