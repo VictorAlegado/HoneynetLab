@@ -10,7 +10,7 @@ I created an Azure subscription to initiate the project environment, within Azur
 <br />
 <img src="https://i.imgur.com/NliRmdI.png" height="80%" width="80%" alt="Overview"/>
 <h2>Outcome</h2>
-40,000+ API requests on failed RDP attempts into my honeynet virtual machine from over 20 different countries in only 24 hours indicates the threat level to any person or organization remains very high in regards to cybersecurity. Analysing the data from the failed RDP requests indicate that the failed requests used password-spraying brute force technique via a bot automating attempts. This is shown by the use of generic usernames such as "Admin", "Server", "User" within seconds of each attempt whilst coming from the same IP Addresses. It is essential to change default usernames, use strong passwords and use/update firewalls to avoid being breached. 
+40,000+ API requests on failed RDP attempts into my honeynet virtual machine from over 20 different countries in only 24 hours indicates the threat level to any person or organization remains very high in regards to cybersecurity. Analysing the data from the failed RDP attempts indicates that these were the result of a bot performing automated password-spraying brute force attacks. This is shown by the use of generic usernames such as "Admin", "Server", "User" within seconds of each attempt whilst coming from the same IP Addresses. It is essential to change default usernames, use strong passwords, configure and update firewalls to avoid being breached. 
 <br />
 <br />
 <img src="https://i.imgur.com/rOEwXib.png" height="80%" width="80%" alt="Map"/>
