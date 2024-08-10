@@ -20,7 +20,7 @@ I created an Azure subscription to initiate the project environment, within Azur
 - <b>PowerShell</b> 
 - <b>Azure services - Virtual Machines, Log Analytics Workspace, Sentinel</b>
 - <b>API Integration - ipgeolocation.io</b>
-- <b>Network Utilities - Firewall and Port Configuration
+- <b>Network Utilities - NSG, Firewall and Port Configuration
 
 <h2>Environments Used </h2>
 
