@@ -5,7 +5,7 @@ In this project, I implemented a honeynet solution within Microsoft Azure which 
 <br />
 
 <h2>Overview</h2>
-I created an Azure subscription to initiate the project environment, within Azure, I set up a virtual machine (VM) that will serve as the honeynet by disabling both external and Windows firewalls, exposing the VM to the internet. I established a log repository in Azure through Log Analytics Workspace to ingest failed RDP logs from the VM. Using PowerShell inside the VM, I automated the extraction of IP addresses from failed RDP requests via Windows Event Viewer and sent the data to a third-party API to derive latitude and longitude information. Finally, I configured Azure Sentinel, Azures cloud-native SIEM, to visualize the enrich the attacker data on a map. 
+I created an Azure subscription to initiate the project environment, within Azure, I set up a virtual machine (VM) that served as the honeynet by disabling both external and Windows firewalls, exposing the VM to the internet. I established a log repository in Azure through Log Analytics Workspace to ingest failed RDP logs from the VM. Using PowerShell inside the VM, I automated the extraction of IP addresses from failed RDP requests via Windows Event Viewer and sent the data to a third-party API to derive latitude and longitude information. Finally, I configured Azure Sentinel, Azures cloud-native SIEM, to visualize the enrich the attacker data on a map. 
 <br />
 <br />
 <img src="https://i.imgur.com/NliRmdI.png" height="80%" width="80%" alt="Overview"/>
